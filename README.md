@@ -2,16 +2,9 @@ Here's a structured README template for your group project:
 
 ---
 
-# G10 Neural Wordsmiths - DNLP SS24 Final Project
+# DNLP Project
 
-<div align="left">
-<b>Group Name:</b> <b style="color:yellow;"> Neural Wordsmiths </b><br/><br/>
-<b>Group Code:</b> G10<br/><br/>
-<b>Group Repository:</b> <a href="https://github.com/Ugusu/dlfnlp-sose2024">Ugusu/dlfnlp-sose2024</a><br/><br/>
-<b>Tutor Responsible:</b> Finn<br/><br/>
-<b>Group Team Leader:</b> Ughur Mammadzada<br/><br/>
-<b>Group Members:</b> Amirreza Aleyasin, Daniel Ariza, Pablo Jahnen, Enno Weber
-</div>
+
 
 ---
 
@@ -24,14 +17,14 @@ Here's a structured README template for your group project:
 [![Code Style](https://img.shields.io/badge/Code%20Style-PEP8-green.svg)](https://www.python.org/dev/peps/pep-0008/)
 [![AI-Usage Card](https://img.shields.io/badge/AI_Usage_Card-pdf-blue.svg)](./NeuralWordsmiths_AI_Usage_Card.pdf/)
 
-This repository contains the official implementation of our final project for the Deep Learning for Natural Language Processing course at the University of Göttingen. The project involved implementing components of the BERT model and applying it to tasks like sentiment classification, paraphrase detection, and semantic similarity. Additionally, we implemented a BART model for paraphrase type generation and detection.
+This repository contains my contribution to the final project for the Deep Learning for Natural Language Processing course at the University of Göttingen. It involved implementing components of the BERT model and applying it to the semantic textual similarity task.
 
 The project is divided into two main parts:
 
-- **Part 01:** We implemented key aspects of the BERT model, including multi-head self-attention and Transformer layers, and applied it to tasks such as sentiment analysis, question similarity, and semantic similarity. Additionally, we implemented a BART model for paraphrase type generation and detection. Each task had at least one baseline implementation.
-- **Part 02 (in progress):** We will fine-tune and extend the models to improve performance on the same downstream tasks. Several techniques from recent research papers will be explored to create more robust and semantically-rich sentence embeddings, aiming to improve over the baseline implementations.
+- **Part 01:** Involves the baseline implementation of the BERT model for the task. This includes the attention mechanism and Transformer layers, and applied it to semantic similarity.
+- **Part 02:** Involves fine-tunning and extending the model to improve performance on the same downstream task. Different techniques are explored to create more robust and semantically-rich sentence embeddings, aiming to improve over the baseline implementations. Also 
 
-The initial part focused on establishing a working baseline for each task, while the latter part will concentrate on refining and optimizing these models for better performance.
+The initial part focused on establishing a working baseline for each task, while the latter part will concentrate on refining and optimizing the model for better performance.
 
 ---
 
