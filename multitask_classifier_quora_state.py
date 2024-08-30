@@ -300,27 +300,20 @@ def train_multitask(args):
     #Define optimizer and load last state
     lr = args.lr
     optimizer = AdamW(model.parameters(), lr=lr)
-    optimizer.load_state_dict(checkpoint['optim'])
     
     
-    #num_training_steps = len(sts_train_dataloader) * args.epochs
-    #num_warmup_steps = int(0.1 * num_training_steps) 
+  
     
     
     # Initialize warm-up scheduler
     
-    #warmup_scheduler = get_linear_schedule_with_warmup(
-    #optimizer,
-    #num_warmup_steps=num_warmup_steps,
-    #num_training_steps=num_training_steps)
+  
     
     
     
     # Initialize exponential decay scheduler
     
-    #decay_scheduler = ExponentialLR(optimizer, gamma=0.9) 
-    
-    
+  
     
     best_dev_acc = float("-inf")
 
@@ -380,21 +373,10 @@ def train_multitask(args):
                 loss = F.mse_loss(normalized_logits, b_labels.view(-1, 1))
                 
                 
-                
-                #bce_loss = nn.BCELoss()
-                #loss = bce_loss(normalized_logits.squeeze(), b_labels_normalized)
-                
                 loss.backward()
                 optimizer.step()
                 
-                # Update learning rate
-                #if step < num_warmup_steps:
-                    #warmup_scheduler.step()  # Warm-up phase
-                #else:
-                    #decay_scheduler.step()  # Exponential decay after warm-up
-                
-                
-                #step += 1
+            
                 train_loss += loss.item()
                 num_batches += 1
 
