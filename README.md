@@ -279,17 +279,4 @@ As shown, the improvement strategy reached its peak performance at the second ep
 This improvement will be used to generate the predictions on the development dataset for the STS task.
 
 
-## Members Contribution
 
-Explain the contribution of each group member:
-
-
-**Pablo Jahnen:**
-- Phase 1:
-  - Implemented the `attention` function in the `BertSelfAttention` class.
-  - Developed functionality for similarity prediction task.
-  - Developed the training loop for similarity prediction task.
-- Phase 2:
-  - Improved semantic textual similarity by implementing and testing following strategies:
-    - Average pooling and embedding strategy
-    - Pre-training on Quora dataset strategy
